@@ -25,7 +25,7 @@ S3 Bronze          ← raw JSON, partitioned by date
 
 ↓
 
-[PySpark]
+DuckDB
 
 ↓
 
@@ -49,7 +49,7 @@ S3 Gold            ← analytical models with SCD Type 2
 |-------|-----------|
 | Ingestion | Python, Requests, boto3 |
 | Storage | AWS S3, Parquet |
-| Processing | PySpark |
+| Processing | DuckDB |
 | Modeling | dbt |
 | Orchestration | Apache Airflow |
 | Quality | Great Expectations |
